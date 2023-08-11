@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocialbook(Seneme - Facebook)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        .toggle-responsive{
+            display:none;
+        }
+     </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img class="logo" src="images/logo3.png" alt="logo" />
+            <!-- toggle for responsive navigation -->
+            <input type="checkbox" id="navBtn" class="checkButton">
+            <label for="navBtn"  onclick="responsiveMenuToggle();">
+                <i class="fa fa-list"></i>
+            </label>
+            <!-- end toggle navigation -->
+            <ul>
+                <li>
+                    <img class="logo" src="images/notification.png" alt="logo" />
+                </li>
+                <li>
+                    <img class="logo" src="images/inbox.png" alt="logo" />
+                </li>
+                <li>
+                    <img class="logo" src="images/video.png" alt="logo" />
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png" />
+                <input type="text" placeholder="Search">
+
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle();">
+                <img src="images/profile-pic.png" />
+            </div>
+        </div>
+        <!--drop down (was done last)-->
+
+        <!--settings menu-->
+        <div class="settings-menu">
+            <div id="dark-btn" >
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" >
+                    <div>
+                        <p>Steven Scott</p>
+                        <a href="#">See your profile</a>                
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="user-profile">
+                    <img src="images/feedback.png" >
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve new designs</a>                
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="settings-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="images/arrow.png" width="10px">
+                    </a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="images/arrow.png" width="10px">
+                    </a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="images/arrow.png" width="10px">
+                    </a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="#"> Logout <img src="images/arrow.png" width="10px">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!--close settings -->
+
+        <!--Toggle responsive menu-->
+        <div class="toggle-menu-nav">
+            <section class="left-side">
+                <div class="news">
+                    <a href="#"><img src="images/news.png"> Latest News</a>
+                    <a href="#"><img src="images/friends.png"> Friends</a>
+                    <a href="#"><img src="images/group.png"> Group</a>
+                    <a href="#"><img src="images/marketplace.png"> Market place</a>
+                    <a href="#"><img src="images/watch.png"> Watch</a>
+                    <a href="#">see more</a>
+                </div>
+                <hr>
+                <div class="shortcuts">
+                     <p>Your Shortcuts</p>
+                     <a href="#"><img src="images/shortcut-1.png"  >Software developers</a>
+                     <a href="#"><img src="images/shortcut-2.png"  >Web developers</a>
+                     <a href="#"><img src="images/shortcut-3.png"  >Full Stack Development</a>
+                     <a href="#"><img src="images/shortcut-4.png"  >iOS developers</a>
+                </div>
+                
+
+            </section>
+
+
+        </div>
+        <!--end toggle-->
+    </nav>
+
+    <!--3 colums / sections -->
+    <div class="container">
+        <section class="left-side">
+            <div class="news">
+                <a href="#"><img src="images/news.png"> Latest News</a>
+                <a href="#"><img src="images/friends.png"> Friends</a>
+                <a href="#"><img src="images/group.png"> Group</a>
+                <a href="#"><img src="images/marketplace.png"> Market place</a>
+                <a href="#"><img src="images/watch.png"> Watch</a>
+                <a href="#">see more</a>
+            </div>
+            <hr>
+            <div class="shortcuts">
+                 <p>Your Shortcuts</p>
+                 <a href="#"><img src="images/shortcut-1.png"  >Software developers</a>
+                 <a href="#"><img src="images/shortcut-2.png"  >Web developers</a>
+                 <a href="#"><img src="images/shortcut-3.png"  >Full Stack Development</a>
+                 <a href="#"><img src="images/shortcut-4.png"  >iOS developers</a>
+            </div>
+        </section>
+        
+        <div class="main-content">
+            <!--main-->
+
+            <!-- story section -->
+            <div class="story-gallery">
+                <div class="story story1">
+                  <img src="images/upload.png">
+                  <p>Post a story</p>
+                </div>
+                <div class="story story2">
+                  <img src="images/member-1.png">
+                   <p>Sharon</p>
+                </div>
+                <div class="story story3">
+                  <img src="images/member-2.png">
+                  <p>Benson</p>
+                </div>
+                <div class="story story4">
+                  <img src="images/member-3.png">
+                  <p>Moses</p>
+                </div>
+                <div class="story story5">
+                  <img src="images/member-4.png">
+                  <p>John</p>
+                </div>
+              </div>          
+              <!-- end story section -->
+
+            <!--post-->
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" >
+                    <div>
+                        <p>Steven Scott</p>
+                        <small>Public <i class="fa fa-caret-down"></i></small>
+                    </div>
+                </div>
+                <!--post textarea-->
+                <div class="post-input-container">
+                    <textarea cols="30" placeholder="What's on your mind ?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/live-video.png" alt=""> Live Video</a>
+                        <a href="#"><img src="images/photo.png" alt=""> Photo Video</a>
+                        <a href="#"><img src="images/feeling.png" alt=""> Feeling Activity</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Post container 1 -->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" >
+                        <div>
+                            <p>Steven Scott</p>
+                            <span>July 27 2023 , 23:17 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">Subscribe <span>@Development Videos</span>, creating guiding tomorrows Software
+                    Engineers, creating lovely UI designs. <a href="#">#Web Development</a>
+                    <a href="#">#Youtubechannel</a>
+               </p>
+               <img src="images/feed-image-1.png" class="post-img">
+
+               <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 120</div>
+                        <div><img src="images/comments.png"> 45</div>
+                        <div><img src="images/share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" alt=""><i class="fa fa-caret-down"></i>
+                    </div>
+               </div>
+            </div>
+            <!--End Post container 1-->
+
+            
+            <!--Post container 2-->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" >
+                        <div>
+                            <p>Steven Scott</p>
+                            <span>July 27 2023 , 23:17 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">Like and <span>Share</span>, with friends and family enjoy make the 
+                    most of the content made available to you. <a href="#">#Web Development</a>
+                    <a href="#">#Youtubechannel</a>
+               </p>
+               <img src="images/feed-image-2.png" class="post-img">
+
+               <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 120</div>
+                        <div><img src="images/comments.png"> 45</div>
+                        <div><img src="images/share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" alt=""><i class="fa fa-caret-down"></i>
+                    </div>
+               </div>
+            </div>
+            <!--End Post container 2-->
+
+            <!--Post container 3-->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" >
+                        <div>
+                            <p>Steven Scott</p>
+                            <span>July 27 2023 , 23:17 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">Like and <span>Share</span>, with friends and family enjoy make the 
+                    most of the content made available to you. <a href="#">#Web Development</a>
+                    <a href="#">#Youtubechannel</a>
+               </p>
+               <img src="images/feed-image-3.png" class="post-img">
+
+               <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 120</div>
+                        <div><img src="images/comments.png"> 45</div>
+                        <div><img src="images/share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" alt=""><i class="fa fa-caret-down"></i>
+                    </div>
+               </div>
+            </div>
+            <!--End Post container 3--> 
+
+            <!--Post container 4-->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" >
+                        <div>
+                            <p>Steven Scott</p>
+                            <span>July 27 2023 , 23:17 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">Like and <span>Share</span>, with friends and family ennjoy make the 
+                    most of the content made available to you. <a href="#">#Web Development</a>
+                    <a href="#">#Youtubechannel</a>
+               </p>
+               <img src="images/feed-image-4.png" class="post-img">
+
+               <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 120</div>
+                        <div><img src="images/comments.png"> 45</div>
+                        <div><img src="images/share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" alt=""><i class="fa fa-caret-down"></i>
+                    </div>
+               </div>
+            </div>
+            <!--End Post container 4--> 
+
+            <!--Post container 5-->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" >
+                        <div>
+                            <p>Steven Scott</p>
+                            <span>July 27 2023 , 23:17 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">Like and <span>Share</span>, with friends and family enjoy make the 
+                    most of the content made available to you. <a href="#">#Web Development</a>
+                    <a href="#">#Youtubechannel</a>
+               </p>
+               <img src="images/feed-image-5.png" class="post-img">
+
+               <div class="post-row">
+                    <div class="activity-icons"> 
+                        <div><img src="images/like-blue.png"> 120</div>
+                        <div><img src="images/comments.png"> 45</div>
+                        <div><img src="images/share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" alt=""><i class="fa fa-caret-down"></i>
+                    </div>
+               </div>
+            </div>
+            <!--End Post container 5--> 
+            <button type="button" class="load-more-button">Load more</button>
+
+        </div>
+        <div class="right-side-bar">
+            <!--right bar-->
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>12</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fa fa-map-marker-alt"></i> Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>12</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p> <i class="fa fa-map-marker-alt"></i> Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="sidebar-title">
+                <h4>Advertisment</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="images/advertisement.png" class="sidebar-ads">
+
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-image">
+                <div class="online">
+                    <img src="images/member-1.png">
+                </div>
+                <p>Cindy Andrew</p>
+            </div>  
+            <div class="online-image">
+                <div class="online">
+                    <img src="images/member-2.png">
+                </div>
+                <p>Jackson Aston</p>
+            </div>
+            <div class="online-image">
+                <div class="online">
+                    <img src="images/member-3.png">
+                </div>
+                <p>Mike Lotan</p>
+            </div>
+        </div>
+ 
+    </div>
+    <!--copy right -->
+    <div class="footer">
+        <p>Copyright &copy; 2023 - Seneme   Nyuswa</p>
+    </div>
+
+    <script>
+        var responsive   = document.querySelector('.toggle-menu-nav');
+        var settingsMenu = document.querySelector('.settings-menu');
+        var darkBtn      = document.getElementById('dark-btn');
+       
+        function settingsMenuToggle(){
+            settingsMenu.classList.toggle('settings-menu-height');  
+        }
+
+        function responsiveMenuToggle(){
+             responsive.classList.toggle('toggle-responsive');  
+        }
+       
+        
+        if(localStorage.getItem('theme') == "light"){
+                
+                darkBtn.classList.remove('dark-btn-on');
+                darkBtn.classList.remove('more'); 
+                document.body.classList.remove('dark-theme');
+        }
+        else if(localStorage.getItem('theme') == "dark"){
+            darkBtn.classList.add('dark-btn-on'); 
+            darkBtn.classList.add('more'); 
+            document.body.classList.add('dark-theme');
+        }
+        else{
+            localStorage.setItem('theme','light');
+
+        } 
+
+        darkBtn.onclick = function(){ 
+
+            darkBtn.classList.toggle('dark-btn-on'); 
+            darkBtn.classList.toggle('more'); 
+            document.body.classList.toggle('dark-theme');
+
+            if(localStorage.getItem('theme') == "light"){
+                localStorage.setItem('theme','dark');
+
+            }
+            else{
+                localStorage.setItem('theme','light');
+
+            }
+        }
+
+       
+        
+    </script>
+</body>
+</html> 
